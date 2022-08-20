@@ -1,97 +1,165 @@
 <DOCTYPE html>
-    <html>
-
+  <html>
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <title>Vikas Reddy's Portfolio Website</title>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="style.css" />
+      <title>Vikas Reddy's Portfolio Website</title>
 
-        <!-- The following file is a CSS file that helps even out any differences between internet browsers -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+      <!-- The following file is a CSS file that helps even out any differences between internet browsers -->
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+      />
 
-        <!-- The following file is a CSS file that provides fonts that is used in this website-->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
-            integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+      <!-- The following file is a CSS file that provides fonts that is used in this website-->
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+        crossorigin="anonymous"
+      />
     </head>
 
     <body>
-        <!--Header-->
-        <section id="header">
-            <div class="header container">
-                <div class="nav-bar">
-                    <div class="brand">
-                        <a href="#hero">
-                            <h1><span>V</span>ikas <span>R</span>eddy</h1>
-                        </a>
-                    </div>
-                    <nav>
-                        <ul>
-                            <li><a href="#about"> About</a></li>
-                            <li><a href="#footer"> Contact</a></li>
-                        </ul>
-                    </nav>
-                </div>
+      <!--Header-->
+      <section id="header">
+        <div class="header container">
+          <div class="nav-bar">
+            <div class="brand">
+              <a href="#hero">
+                <h1><span>V</span>ikas <span>R</span>eddy</h1>
+              </a>
             </div>
-        </section>
-        <!--End of Header-->
+            <nav>
+              <ul>
+                <li><a href="#hero"> Home </a></li>
+                <li><a href="#about"> About</a></li>
+                <li><a href="#projects"> Projects</a></li>
+                <li><a href="#footer"> Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </section>
+      <!--End of Header-->
 
-        <!--Hero Section-->
-        <section id="hero">
-            <div class="hero container">
-                <div>
-                    <h1>Hello, <span></span></h1>
-                    <h1>My Name is <span></span></h1>
-                    <h1>Vikas <span></span></h1>
-                    <a href="#about" type="button" class="cta">Explore</a>
-                </div>
-            </div>
-        </section>
-        <!--End of Hero Section-->
+      <!--Hero Section-->
+      <section id="hero">
+        <div class="hero container">
+          <div>
+            <h1>Hello, <span></span></h1>
+            <h1>My Name is <span></span></h1>
+            <h1>Vikas <span></span></h1>
+            <a href="#about" type="button" class="cta">Explore</a>
+          </div>
+        </div>
+      </section>
+      <!--End of Hero Section-->
 
-        <!-- About Me Section-->
-        <section class="about" id="about">
+      <!-- About Me Section-->
+      <section class="about" id ="about">
+        <div class="grid mobilegrid">
+          <div class="profile-img-container"></div>
             <div class="main">
-                <img src="./img/Vikas Reddy Image.jpeg" alt="Image of Vikas Reddy">
-                <div class="about-text">
-                    <h2>About Me</h2>
-                    <h5><span>Aspiring Software Engineer</span></h5>
-                    <p>My name is Vikas, and I have recently graduated from St. Mary's International School with the IB
-                       Diploma. I am currently a freshman at the University of Maryland majoring in Computer Science with a minor
-                       in Statistics. I am in search of internship opportunities which will allow me to further familiarize
-                       myself with software engineering.</p>
-                    <a href="https://drive.google.com/file/d/1ONtR7xLaORKDENKAJFsk8NkHNQQEF8bv/view?usp=sharing"
-                        type="button" class="but">Resume</a>
-                    <a href="https://github.com/vikasreddy85" type="button" class="but">Projects</a>
-
-                </div>
+              <div class="about-text">
+                <h2>About Me</h2>
+                <h5><span>Software Engineer</span></h5>
+                <p>
+                  I'm an undergraduate student at the University of Maryland pursuing 
+                  a degree in Computer Science and a minor in Statistics. 
+                  <br>
+                  <br>
+                  <b>From:</b> Tokyo, Japan
+                  <br>
+                  <b>Lives in:</b> Maryland, US
+                  <br>
+                  <b>Age:</b> 18
+                  <br>
+                  <b>Hobbies:</b> Cycling and Chess
+                  <br>
+                </p>
+                <a
+                  href="https://drive.google.com/file/d/1ONtR7xLaORKDENKAJFsk8NkHNQQEF8bv/view?usp=sharing"
+                  target="_blank"
+                  type="button"
+                  class="btn btn-theme-outline"
+                  >Resume</a>
+                  <a
+                  href="https://drive.google.com/file/d/1ONtR7xLaORKDENKAJFsk8NkHNQQEF8bv/view?usp=sharing"
+                  target="_blank"
+                  type="button"
+                  class="btn btn-theme-outline btn-green"
+                  >Github</a>
+                  <a
+                  href="https://drive.google.com/file/d/1ONtR7xLaORKDENKAJFsk8NkHNQQEF8bv/view?usp=sharing"
+                  target="_blank"
+                  type="button"
+                  class="btn btn-theme-outline btn-blue"
+                  >Linkedin</a>
+              </div>
             </div>
-        </section>
-        <!-- End of About Me Section-->
+        </div>
+      </section>
 
-        <!-- Footer -->
+      <!-- End of About Me Section-->
+      <!--Project Section-->
+      <section id="projects"">
+        <div class="band">
+          <h1 class="proj-text">Projects</h1>
+          <div class="item-1">
+            <a href="https://github.com/vikasreddy85/Face-Recognition-Model" target="_blank" class="card">
+              <div class="thumb" style="background-image: url(img/ml-pic.png)"></div>
+              <article class="card-article">
+                <h1 class="card-h1">Face Recognition Model</h1>
+                <span class="card-span">March 2022</span>
+              </article>
+            </a>
+          </div>
+          <div class="item-2">
+            <a href="https://github.com/vikasreddy85/music-player" class="card">
+              <div class="thumb twoimg"></div>
+              <article class="card-article">
+                <h1 class="card-h1">JPOP Music Player</h1>
+                <span class="card-span">July 2022</span>
+              </article>
+            </a>
+          </div>
+          <div class="item-3">
+            <a href="https://github.com/vikasreddy85/" class="card">
+              <div class="thumb threeimg"></div>
+              <article class="card-article">
+                <h1 class="card-h1">Workout Logger</h1>
+                <span class="card-span">August 2022</span>
+              </article>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!--End of Project Section-->
+
+      <!-- Footer -->
         <section class="footer" id="footer">
-            <div class="footer container">
-                <div class="brand">
-                    <h1><span>V</span>ikas <span>R</span>eddy</h1>
+          <div class="footer container">
+              <div class="brand">
+                  <h1><span>V</span>ikas <span>R</span>eddy</h1>
                 </div>
                 <h2>Contact Me</h2>
                 <div class="social-icon">
                     <div class="social-item">
-                        <a href="https://www.linkedin.com/in/vikasreddy85"><img src="./img/linkedin.png" /></a>
+                        <a href="https://www.linkedin.com/in/vikasreddy85" target="_blank"><img src="./img/linkedin.png" /></a>
                     </div>
                     <div class="social-item">
-                        <a href="https://github.com/vikasreddy85"><img src="./img/github.png" /></a>
+                        <a href="https://github.com/vikasreddy85"target="_blank"><img src="./img/github.png" /></a>
                     </div>
                     <div class="social-item">
-                        <a href="mailto: vikasreddy2313@gmail.com"><img src="./img/gmail.png" /></a>
+                        <a href="mailto: vikasreddy2313@gmail.com"target="_blank"><img src="./img/gmail.png" /></a>
                     </div>
                 </div>
             </div>
         </section>
         <!-- End Footer -->
-        
-        <script src="./app.js"></script>
-    </body>
 
-    </html>
+      <script src="./app.js"></script>
+    </body></html
+></DOCTYPE>

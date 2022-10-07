@@ -3,7 +3,7 @@ layout: default
 title: Ruoxi (Anna) Shang
 ---
 
-{% assign areas = site.data.research-area.area %}
+{% assign projects = site.data.research-project.project %}
 {% assign news = site.data.news.list %}
 
 {% assign publications = site.data.publication.publication %}
@@ -24,17 +24,17 @@ title: Ruoxi (Anna) Shang
         </div>
         <div class="col-12 col-md-9">
             <div class="container pt-2">
-                <p style="font-weight: 500 !important; text-transform: uppercase;">Research area</p>
+                <p style="font-weight: 500 !important; text-transform: uppercase;">Ongoing projects</p>
                 <div class="row mt-4">
-                    {% for area in areas limit: 2 %}
+                    {% for project in projects limit: 2 %}
                     <div class="col-6 col-md-6 mb-4 mb-md-0">
                         <div class="row">
                             <div class="col-6">
-                                <img src="{{ '/assets/images/research_area/' | append: area.image | relative_url }}" alt="" style="height: auto; width: 100%;">
+                                <img src="{{ '/assets/images/research_project/' | append: project.image | relative_url }}" alt="" style="height: auto; width: 100%;">
                             </div>      
                             <div class="col-6 px-0">
-                                <p style="font-size: .95rem; font-weight: 400 !important;" class="mb-1">{{ area.title }}</p>
-                                <p style="font-size: .85rem; font-weight: 400 !important;">{{ area.content }}</p>
+                                <p style="font-size: .95rem; font-weight: 500 !important; line-height: 1.2 !important;" class="mb-3">{{ project.title }}</p>
+                                <p style="font-size: .85rem; font-weight: 400 !important;">{{ project.content }}</p>
                             </div>      
                         </div>
                     </div>
@@ -69,7 +69,6 @@ title: Ruoxi (Anna) Shang
                         {% unless forloop.last %}
                         <hr>
                         {% endunless %}
-                        
                     </div>
                     {% endfor %}
                 </div>
@@ -80,9 +79,12 @@ title: Ruoxi (Anna) Shang
                     {% for new in news limit: 5 %}
                     <div class="col-12">
                         <p class="mb-0" style="font-size: 1rem; font-weight: 400 !important;">{{ new.title }}</p>
-                        <p class="mb-1" style="font-size: .85rem; font-weight: 200 !important;">{{ new.date | date_to_long_string }}</p>
+                        <p class="mb-1" style="font-size: .85rem; font-weight: 200 !important;">{{ new.date }}</p>
                         <p style="font-size: .95rem; font-weight: 300 !important;">{{ new.description }}</p>
+                        
+                        {% unless forloop.last %}
                         <hr>
+                        {% endunless %}
                     </div>
                     {% endfor %}
                 </div>

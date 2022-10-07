@@ -43,7 +43,7 @@ title: Ruoxi (Anna) Shang
                 <p style="font-weight: 500 !important; text-transform: uppercase;">Ongoing projects</p>
                 <div class="row mt-4">
                     {% for project in projects limit: 2 %}
-                    <div class="col-6 col-md-6 mb-4 mb-md-0">
+                    <div class="col-12 col-md-6 mb-4 mb-md-0">
                         <div class="row">
                             <div class="col-6">
                                 <img src="{{ '/assets/images/research_project/' | append: project.image | relative_url }}" alt="" style="height: auto; width: 100%;">
@@ -60,13 +60,13 @@ title: Ruoxi (Anna) Shang
                     <a href="{{ 'project' | relative_url }}" style="font-size: .95rem; font-weight: 500 !important;">> View All</a>
                 </div>
             </div>
-            <div class="container pb-5">
+            <div class="container pb-3">
                 <p style="font-weight: 500 !important; text-transform: uppercase;">Publications</p>
                 <div class="row mt-4">
                     {% for pub in publications limit: 5 %}
                     <div class="col-12">
                         <p class="mb-1" style="font-size: 1rem; font-weight: 400 !important;">{{ pub.title }}</p>
-                        <p class="mb-1" style="font-size: .95rem; font-weight: 200 !important;">{{ pub.authors }}</p>
+                        <p class="mb-1" style="font-size: .95rem; font-weight: 200 !important;">{% for author in pub.authors %}{% if author == "Ruoxi Shang" %}<b>{{ author }}</b>{% else %}{{ author }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}</p>
                         <p class="mb-1" style="font-size: .95rem; font-weight: 300 !important;">{{ pub.venue_short }}{%if pub.venue_long %}: {{ pub.venue_long }}{% endif %}</p>
                         {% if pub.award %}
                         <p class="mb-1" style="font-size: .95rem; font-weight: 300 !important;"><i class="fa-solid fa-medal"></i>&nbsp;&nbsp;{{ pub.award }}</p>
@@ -92,7 +92,7 @@ title: Ruoxi (Anna) Shang
                     <a href="{{ 'publication' | relative_url }}" style="font-size: .95rem; font-weight: 500 !important;">> View All</a>
                 </div>
             </div>
-            <div class="container pb-5">
+            <div class="container pb-3">
                 <p style="font-weight: 500 !important; text-transform: uppercase;">News</p>
                 <div class="row mt-4">
                     {% for new in news limit: 5 %}

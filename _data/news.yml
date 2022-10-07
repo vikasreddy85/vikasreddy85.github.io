@@ -1,13 +1,13 @@
 list: # format date as dd/mm/yyyy
-  - title: "Actively looking for Summer 2023 internship opportunities!"
+  - title: "Actively looking for summer 2023 internship opportunities"
     date: "Oct 2022" # Oct 21, 2021
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac dignissim lacus."
+    description: "I'm interested in working on projects broadly related to human-AI interaction, trust, and explainable ML. "
   - title: "Starting my summer internship at TruEra"
     date: "Sep 2022" # Oct 21, 2021
-    description: "I joined TruEra for summer internship with my amazing and supportive mentors. I did research on how data scientists approach performance debugging of machine learning models."
-  - title: "Presented my first first-author full paper at FAccT 2022"
+    description: "I worked on understanidng how data scientists approach performance debugging of machine learning models and supporting them with a guided product workflows."
+  - title: "Presented my 1st first-author full paper at FAccT 2022"
     date: "Jun 2022" # Oct 21, 2021
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac dignissim lacus."
+    description: "Also my first time visiting Seoul!"
   - title: "Attended my first in-person conference at CHI 2022"
     date: "May 2022" # Oct 21, 2021
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac dignissim lacus."
+    description: "Finally get confirmed that people on zoom are real!"

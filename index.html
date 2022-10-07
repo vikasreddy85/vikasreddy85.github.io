@@ -1,0 +1,96 @@
+---
+layout: default
+title: UW Prosocial Computing Group
+---
+
+{% assign areas = site.data.research-area.area %}
+{% assign news = site.data.news.list %}
+
+{% assign publications = site.data.publication.publication %}
+
+
+<div class="container py-3">
+    <div class="row">
+        <div class="col-12 col-md-3 mb-4 mb-md-0">
+            <div class="sticky-top">
+            <img src="{{ '/assets/images/main/avatar.jpg' | relative_url }}" alt="" class="pt-3" style="height: auto; width: 100% !important;">
+
+            <p style="font-weight: 300 !important" class="pt-4">
+                I am an HCI researcher and a third-year PhD student at University of Washington <a>Human-centered Design and Engineering (HCDE)</a>, working with Gary Hsieh and Chirag Shah. My research interests generally fall in social computing, explainble ML, and human-AI interaction.
+                <br><br>
+                Before joining UW, I had fun with mathematics, data science, and applied machine learning as an undergrad at <a>UC Berkeley</a>.
+            </p>
+            </div>
+        </div>
+        <div class="col-12 col-md-9">
+            <div class="container pt-2">
+                <p style="font-weight: 500 !important; text-transform: uppercase;">Research area</p>
+                <div class="row mt-4">
+                    {% for area in areas limit: 2 %}
+                    <div class="col-6 col-md-6 mb-4 mb-md-0">
+                        <div class="row">
+                            <div class="col-6">
+                                <img src="{{ '/assets/images/research_area/' | append: area.image | relative_url }}" alt="" style="height: auto; width: 100%;">
+                            </div>      
+                            <div class="col-6 px-0">
+                                <p style="font-size: .95rem; font-weight: 400 !important;" class="mb-1">{{ area.title }}</p>
+                                <p style="font-size: .85rem; font-weight: 400 !important;">{{ area.content }}</p>
+                            </div>      
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+                <div class="d-flex flex-row-reverse mt-4">
+                    <a href="{{ 'research' | relative_url }}" style="font-size: .95rem; font-weight: 500 !important;">> View All</a>
+                </div>
+            </div>
+            <div class="container pb-5">
+                <p style="font-weight: 500 !important; text-transform: uppercase;">Publications</p>
+                <div class="row mt-4">
+                    {% for pub in publications limit: 5 %}
+                    <div class="col-12">
+                        <p class="mb-1" style="font-size: 1rem; font-weight: 400 !important;">{{ pub.title }}</p>
+                        <p class="mb-1" style="font-size: .95rem; font-weight: 200 !important;">{{ pub.authors }}</p>
+                        <p class="mb-1" style="font-size: .95rem; font-weight: 300 !important;">{{ pub.venue_short }}{%if pub.venue_long %}: {{ pub.venue_long }}{% endif %}</p>
+                        {% if pub.award %}
+                        <p class="mb-1" style="font-size: .95rem; font-weight: 300 !important;"><i class="fa-solid fa-medal"></i>&nbsp;&nbsp;{{ pub.award }}</p>
+                        {% endif %}
+                        <p style="font-size: .9rem; font-weight: 300 !important;">
+                            {% if pub.pdf %}
+                            <a href="{{ '/assets/pdf/publications/' | append: pub.pdf | relative_url }}"><i class="fa-solid fa-file"></i>&nbsp;&nbsp;PDF</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                            {% endif %}
+                            {% if pub.video %}
+                            <a href="{{ pub.video }}"><i class="fa-solid fa-play"></i>&nbsp;&nbsp;Video</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                            {% endif %}
+                            {% if pub.slides %}
+                            <a href="{{ pub.slides }}"><i class="fa-solid fa-file-powerpoint"></i>&nbsp;&nbsp;Slides</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                            {% endif %}
+                        </p>
+                        {% unless forloop.last %}
+                        <hr>
+                        {% endunless %}
+                        
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="container pb-5">
+                <p style="font-weight: 500 !important; text-transform: uppercase;">News</p>
+                <div class="row mt-4">
+                    {% for new in news limit: 5 %}
+                    <div class="col-12">
+                        <p class="mb-0" style="font-size: 1rem; font-weight: 400 !important;">{{ new.title }}</p>
+                        <p class="mb-1" style="font-size: .85rem; font-weight: 200 !important;">{{ new.date | date_to_long_string }}</p>
+                        <p style="font-size: .95rem; font-weight: 300 !important;">{{ new.description }}</p>
+                        <hr>
+                    </div>
+                    {% endfor %}
+                </div>
+                <div class="d-flex flex-row-reverse mt-4">
+                    <a href="{{ 'news' | relative_url }}" style="font-size: .95rem; font-weight: 500 !important;">> View All</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -20,6 +20,22 @@ title: Ruoxi (Anna) Shang
                 <br><br>
                 Before joining UW, I had fun with mathematics, data science, and applied machine learning as an undergrad at <a href="https://donghoon.io">UC Berkeley</a>.
             </p>
+            <p class="mb-0">
+                <a href="#" class="cryptedmail"
+                    data-name="rxshang"
+                    data-domain="uw"
+                    data-tld="edu"
+                    onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld; return false;">
+                    <i class="fa-solid fa-envelope" style="margin-right: .3rem;"></i>
+                </a>
+
+            </p>
+            <p class="mb-0">
+                <a href="https://twitter.com/annashang_rx"><i class="fa-brands fa-twitter" style="margin-right: .4rem;"></i>@annashang_rx</a>
+            </p>
+            <p class="mb-0">
+                <a href="https://www.linkedin.com/in/ruoxi-shang-610359133"><i class="fa-brands fa-linkedin" style="margin-right: .6rem;"></i></a>
+            </p>
             </div>
         </div>
         <div class="col-12 col-md-9">
@@ -41,7 +57,7 @@ title: Ruoxi (Anna) Shang
                     {% endfor %}
                 </div>
                 <div class="d-flex flex-row-reverse mt-4">
-                    <a href="{{ 'research' | relative_url }}" style="font-size: .95rem; font-weight: 500 !important;">> View All</a>
+                    <a href="{{ 'project' | relative_url }}" style="font-size: .95rem; font-weight: 500 !important;">> View All</a>
                 </div>
             </div>
             <div class="container pb-5">
@@ -72,6 +88,9 @@ title: Ruoxi (Anna) Shang
                     </div>
                     {% endfor %}
                 </div>
+                <div class="d-flex flex-row-reverse mt-4">
+                    <a href="{{ 'publication' | relative_url }}" style="font-size: .95rem; font-weight: 500 !important;">> View All</a>
+                </div>
             </div>
             <div class="container pb-5">
                 <p style="font-weight: 500 !important; text-transform: uppercase;">News</p>
@@ -96,3 +115,9 @@ title: Ruoxi (Anna) Shang
     </div>
 </div>
 
+<style>
+
+.cryptedmail:after {
+    content: attr(data-name) "@" attr(data-domain) "." attr(data-tld); 
+}
+</style>

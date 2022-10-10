@@ -1,6 +1,6 @@
 project:
-  - title: "Trust in human-AI interaction"
-    content: "Developing semantic differential scales to measure affective and cognitive trust when human are interacting with AI assistants"
+  - title: "How do people trust their AI assistants cognitively and affectively?"
+    content: "Developing items to measure and study how AI assistants can be trusted affectively by their human partners."
     image: "trust.jpg"
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
   - title: "Chatbot-assisted collaboration"

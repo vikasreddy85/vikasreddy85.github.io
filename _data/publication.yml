@@ -1,4 +1,14 @@
 publication:
+  - title: "IntroBot: Exploring the Use of Chatbot-assisted Familiarization in Online Collaborative Groups"
+    authors:
+      - Donghoon Shin
+      - Soomin Kim
+      - Ruoxi Shang
+      - Joonhwan Lee
+      - Gary Hsieh
+    venue_short: "CHI 2023"
+    venue_long: "CHI Conference on Human Factors in Computing Systems"
+    pdf: "chi2023_introbot_paper.pdf"
   - title: "Why Am I Not Seeing It? Understanding Users’ Needs for Counterfactual Explanations in Everyday Recommendations"
     authors:
       - Ruoxi Shang

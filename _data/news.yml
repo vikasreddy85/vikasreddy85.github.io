@@ -1,7 +1,9 @@
 list: # format date as dd/mm/yyyy
-  - title: "Actively looking for summer 2023 internship opportunities"
-    date: "Oct 2022" # Oct 21, 2021
-    description: "I'm interested in working on projects broadly related to human-AI interaction, trust, and explainable ML. "
+  - title: "Actively looking for summer 2024 internship opportunities..."
+    date: "Oct 2023" # Oct 21, 2021
+    description: "I'm interested in working on projects broadly related to human-AI interaction, Trust, LLMs-powered applications, Visualization."
+  - title: "Started my summer internship at MSR working with the fxData Team!"
+    date: "Jun 2023" # Oct 21, 2021    
   - title: "Starting my summer internship at TruEra"
     date: "Sep 2022" # Oct 21, 2021
     description: "I worked on understanidng how data scientists approach performance debugging of machine learning models and supporting them with a guided product workflows."

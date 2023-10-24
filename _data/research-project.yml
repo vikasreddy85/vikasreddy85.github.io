@@ -2,7 +2,7 @@ project:
   - title: "LLMs for Supporting Technical Interviews"
     short-content: "We are exploring how LLMs-powered feedback can facilitate programmers to practice soft skills during a coding interview. "
     content: "This research project leverages the capabilities of Large Language Models (LLMs) to explore provide qualitative feedback in the context of technical interviews. 
-    Unlike traditional developer support tools that focused on technical aspects, this study aims to serve as a soft skill-focused assistive tool for programmers to effectively communicate their thinking process and articulate their intent. 
+    While traditional developer support tools usually focus on technical aspets of programming, we aim to develop a soft skill-focused assistive tool for programmers to effectively communicate their thinking process and articulate their intent. 
     Collecting annotated data from seasoned interviewers, we employ few-shot learning techniques to train LLMs to provide specific, contextual, and actionable feedback that transcends generic advice. 
     The ultimate goal is to create an AI-driven coaching system that mimics expert-level guidance, enhancing the candidate's holistic performance in the competitive tech job market. "
     image: "debug.png"

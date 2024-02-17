@@ -1,4 +1,20 @@
 publication:
+  - title: "Trusting your AI Agent Emotionally and Cognitively: Development and Validation of a Semantic Differential Scale for AI Trust"
+    authors:
+      - Ruoxi Shang
+      - Gary Hsieh
+      - Chirag Shah
+    venue_short: "FAccT 2024 (In Submission)"
+    venue_long: "Conference on Fairness, Accountability, and Transparency"
+  - title: "How Do Analysts Understand and Verify AI-Assisted Data Analyses?"
+    authors:
+      - Ken Gu
+      - Ruoxi Shang
+      - Tim Althoff
+      - Chenglong Wang
+      - Steven M. Drucker
+    venue_short: "CHI 2024"
+    venue_long: "CHI Conference on Human Factors in Computing Systems"
   - title: "IntroBot: Exploring the Use of Chatbot-assisted Familiarization in Online Collaborative Groups"
     authors:
       - Donghoon Shin

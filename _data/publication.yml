@@ -15,6 +15,7 @@ publication:
       - Steven M. Drucker
     venue_short: "CHI 2024"
     venue_long: "CHI Conference on Human Factors in Computing Systems"
+    pdf: "chi2024_llm_paper.pdf"
   - title: "IntroBot: Exploring the Use of Chatbot-assisted Familiarization in Online Collaborative Groups"
     authors:
       - Donghoon Shin

@@ -4,9 +4,9 @@ publication:
       - Ruoxi Shang
       - Gary Hsieh
       - Chirag Shah
-    venue_short: "FAccT 2024 (In Submission)"
-    venue_long: "Conference on Fairness, Accountability, and Transparency"
-    pdf: "facct2024_trust_paper.pdf"
+    venue_short: "AIES 2024"
+    venue_long: "AAAI Conference on AI, Ethics, and Society"
+    pdf: "aies2024_trust_paper.pdf"
   - title: "How Do Analysts Understand and Verify AI-Assisted Data Analyses?"
     authors:
       - Ken Gu

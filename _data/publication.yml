@@ -1,4 +1,25 @@
 publication:
+  - title: "BLADE: Benchmarking Language Model Agents for Data-Driven Science"
+    authors: 
+      - Ken Gu
+      - Ruoxi Shang
+      - Ruien Jiang
+      - Keying Kuang
+      - Richard-John Lin
+      - Donghe Lyu
+      - Yue Mao
+      - Youran Pan
+      - Teng Wu
+      - Jiaqian Yu
+      - Yikun Zhang
+      - Tianmai M. Zhang
+      - Lanyi Zhu
+      - Mike A. Merrill
+      - Jeffrey Heer
+      - Tim Althoff
+    venue_short: "Preprint"
+    arxiv: "https://www.arxiv.org/pdf/2408.09667"
+    github: "https://github.com/behavioral-data/BLADE"
   - title: "Trusting your AI Agent Emotionally and Cognitively: Development and Validation of a Semantic Differential Scale for AI Trust"
     authors:
       - Ruoxi Shang
@@ -7,6 +28,7 @@ publication:
     venue_short: "AIES 2024"
     venue_long: "AAAI Conference on AI, Ethics, and Society"
     pdf: "aies2024_trust_paper.pdf"
+    arxiv: "https://www.arxiv.org/pdf/2408.05354"
   - title: "How Do Analysts Understand and Verify AI-Assisted Data Analyses?"
     authors:
       - Ken Gu

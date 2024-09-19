@@ -8,21 +8,21 @@ title: Publication
 
 <style>
 .project-view {
-	padding-top: .5rem;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+    padding-top: .5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 @media (min-width:48.0625em) {
-	.project-view {
-		justify-content: center;
-	}
+    .project-view {
+        justify-content: center;
+    }
 }
 
 .item:last-child > hr {
     display: none;
-  }
+}
 </style>
 
 <div class="container py-4">
@@ -44,6 +44,12 @@ title: Publication
               <p style="font-size: .9rem; font-weight: 300 !important;">
                   {% if pub.pdf %}
                   <a href="{{ '/assets/pdf/publications/' | append: pub.pdf | relative_url }}"><i class="fa-solid fa-file"></i>&nbsp;&nbsp;PDF</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                  {% endif %}
+                  {% if pub.arxiv %}
+                  <a href="{{ pub.arxiv }}"><i class="fa-solid fa-file-archive"></i>&nbsp;&nbsp;arXiv</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                  {% endif %}
+                  {% if pub.github %}
+                  <a href="{{ pub.github }}"><i class="fa-brands fa-github"></i>&nbsp;&nbsp;GitHub</a>&nbsp;&nbsp;&nbsp;&nbsp;
                   {% endif %}
                   {% if pub.video %}
                   <a href="{{ pub.video }}"><i class="fa-solid fa-play"></i>&nbsp;&nbsp;Video</a>&nbsp;&nbsp;&nbsp;&nbsp;

@@ -1,5 +1,5 @@
 list: # format date as dd/mm/yyyy
-    - title: "October Travel Plan: I'll be serving as SV at UIST 2024 (Oct 12-17) and presenting at AIES 2024 (Oct 21-23)."
+  - title: "October Travel Plan: I'll be serving as SV at UIST 2024 (Oct 12-17) and presenting at AIES 2024 (Oct 21-23)."
     date: "Sep 2024" # Oct 21, 2021
     description: "See you @ Pittsburg and San Jose"
   - title: "Started my summer internship at MSR working with the fxData Team!"

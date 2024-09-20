@@ -17,7 +17,8 @@ publication:
       - Mike A. Merrill
       - Jeffrey Heer
       - Tim Althoff
-    venue_short: "Preprint"
+    venue_short: "EMNLP 2024"
+    venue_long: "Empirical Methods in Natural Language Processing"
     arxiv: "https://www.arxiv.org/pdf/2408.09667"
     github: "https://github.com/behavioral-data/BLADE"
   - title: "Trusting your AI Agent Emotionally and Cognitively: Development and Validation of a Semantic Differential Scale for AI Trust"

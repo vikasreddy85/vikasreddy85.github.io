@@ -14,3 +14,8 @@ plugins:
  - jekyll-seo-tag
 
 theme: minima
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:title

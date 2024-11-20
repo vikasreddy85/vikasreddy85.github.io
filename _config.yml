@@ -1,3 +1,4 @@
+# Site settings
 title: Ruoxi (Anna) Shang
 author:
   name: Ruoxi (Anna) Shang
@@ -7,6 +8,12 @@ description: > # this means to ignore newlines until "show_excerpts:"
 
 show_excerpts: false # set to true to show excerpts on the homepage
 
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /projects/:title
+
 # Minima date format
 # refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
 plugins:
@@ -14,8 +21,3 @@ plugins:
  - jekyll-seo-tag
 
 theme: minima
-
-collections:
-  projects:
-    output: true
-    permalink: /projects/:title

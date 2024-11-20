@@ -4,37 +4,16 @@ layout: default
 
 <div class="container py-4">
     <div class="row mt-5">
-        <!-- Title -->
-        <div class="col-12 mb-4">
-            <h1 class="display-5 fw-bold">{{ page.title }}</h1>
+        <div class="col-12 col-md-3 mb-3 mb-md-0 align-self-center">
+            <img src="{{ '/assets/images/research_project/' | append: page.image | relative_url }}" alt="{{ page.alt }}" style="height: auto; width: 100%;">
         </div>
-
-        <!-- Image -->
-        <div class="col-12 mb-4">
-            {% if page.image %}
-            <img src="{{ '/assets/images/research_project/' | append: page.image | relative_url }}" 
-                 alt="{{ page.alt }}" 
-                 class="img-fluid"
-                 style="max-height: 400px; width: auto; display: block; margin: 0 auto;">
-            {% endif %}
-        </div>
-
-        <!-- Authors -->
-        <div class="col-12 mb-4">
-            <h2 class="h5 text-muted">
-                {% if page.collaborator and page.collaborator != "" %}
-                    {{ page.collaborator }}
-                {% endif %}
-                {% if page.advisor and page.advisor != "" %}
-                    <br>{{ page.advisor }}
-                {% endif %}
-            </h2>
-        </div>
-
-        <!-- Abstract -->
-        <div class="col-12">
-            <h3 class="h4 mb-3">Abstract</h3>
-            <p class="lead">{{ page.content }}</p>
+        <div class="col-12 col-md-9 mb-3 mb-md-0 align-self-center">
+            <p class="mt-2" style="font-size: 0.8rem; font-style: italic;">{{ page.type }}</p>
+            <p class="mt-2" style="font-size: 1rem; font-weight: 500 !important;">{{ page.title }}</p>
+            <p class="mt-2" style="font-size: 1rem;">{{ page.content }}</p>
+            <p class="mt-2" style="font-size: 1rem;">{{ page.date }}</p>
+            <p class="mt-2" style="font-size: 1rem;">{{ page.collaborator }}</p>
+            <p class="mt-2" style="font-size: 1rem;">{{ page.advisor }}</p>
         </div>
     </div>
 </div>

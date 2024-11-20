@@ -81,6 +81,29 @@ h4 {
 	padding: 1rem .5rem;
 }
 
+.sticky-top {
+    position: sticky;
+    top: 2rem;
+    height: calc(100vh - 4rem);
+    overflow-y: auto;
+}
+
+/* Hide scrollbar for the sticky panel while preserving functionality */
+.sticky-top::-webkit-scrollbar {
+    display: none;
+}
+
+.sticky-top {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+/* Ensure the right panel can scroll independently */
+.col-md-8 {
+    height: 100%;
+    overflow-y: auto;
+}
+
 .container {
 	margin-bottom: 2rem;
 	max-width: none !important;

@@ -8,35 +8,24 @@ title: Project
 <div class="container py-4">
     <p style="font-weight: 500 !important; text-transform: uppercase;">Project</p>
     {% for project in projects %}
-    {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
-    {% if thecycle == 'odd' %}
     <div class="row mt-5">
         <div class="col-12 col-md-3 mb-3 mb-md-0 align-self-center">
-            <img src="{{ '/assets/images/research_project/' | append: project.image | relative_url }}" alt="" style="height: auto; width: 100%;">
+            <a href="{{ '/projects/' | append: project.slug | relative_url }}">
+                <img src="{{ '/assets/images/research_project/' | append: project.image | relative_url }}" 
+                     alt="{{ project.alt }}" 
+                     style="height: auto; width: 100%;">
+            </a>
         </div>
         <div class="col-12 col-md-9 mb-3 mb-md-0 align-self-center">
             <p class="mt-2" style="font-size: 0.8rem; font-style: italic;">{{ project.type }}</p>
-            <p class="mt-2" style="font-size: 1rem; font-weight: 500 !important;">{{ project.title }}</p>
+            <a href="{{ '/projects/' | append: project.slug | relative_url }}">
+                <p class="mt-2" style="font-size: 1rem; font-weight: 500 !important;">{{ project.title }}</p>
+            </a>
             <p class="mt-2" style="font-size: 1rem;">{{ project.content }}</p>
             <p class="mt-2" style="font-size: 1rem;">{{ project.date }}</p>
             <p class="mt-2" style="font-size: 1rem;">{{ project.collaborator }}</p>
             <p class="mt-2" style="font-size: 1rem;">{{ project.advisor }}</p>
         </div>
     </div>
-    {% else %}
-    <div class="row mt-5">
-        <div class="col-12 col-md-3 mb-3 mb-md-0 order-md-2 align-self-center">
-            <img src="{{ '/assets/images/research_project/' | append: project.image | relative_url }}" alt="" style="height: auto; width: 100%;">
-        </div>
-        <div class="col-12 col-md-9 mb-3 mb-md-0 order-md-1 align-self-center">
-            <p class="mt-2" style="font-size: 0.8rem; font-style: italic;">{{ project.type }}</p>
-            <p class="mt-2" style="font-size: 1rem; font-weight: 500 !important;">{{ project.title }}</p>
-            <p class="mt-2" style="font-size: 1rem;">{{ project.content }}</p>
-            <p class="mt-2" style="font-size: 1rem;">{{ project.date }}</p>
-            <p class="mt-2" style="font-size: 1rem;">{{ project.collaborator }}</p>
-            <p class="mt-2" style="font-size: 1rem;">{{ project.advisor }}</p>
-        </div>
-    </div>
-    {% endif %}
     {% endfor %}
 </div>

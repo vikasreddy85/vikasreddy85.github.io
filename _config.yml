@@ -20,7 +20,7 @@ theme: minima
 collections:
   projects:
     output: true
-    permalink: /projects/:title
+    permalink: /projects/:slug
 
 defaults:
   - scope:

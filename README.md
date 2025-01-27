@@ -1,2 +1,2 @@
-# Anna Shang's Personal Website
-This repository contains the codebase of Anna Shang's personal website
+# Vikas Reddy's Personal Website
+This repository contains the codebase of Vikas Reddy's personal website

@@ -1,15 +1,6 @@
-list: # format date as dd/mm/yyyy
-  - title: "October Travel Plan: I'll be serving as SV at UIST 2024 (Oct 12-17) and presenting at AIES 2024 (Oct 21-23)."
-    date: "Sep 2024" # Oct 21, 2021
-    description: "See you @ Pittsburg and San Jose"
-  - title: "Started my summer internship at MSR working with the fxData Team!"
-    date: "Jun 2023" # Oct 21, 2021    
-  - title: "Starting my summer internship at TruEra"
-    date: "Sep 2022" # Oct 21, 2021
-    description: "I worked on understanidng how data scientists approach performance debugging of machine learning models and supporting them with a guided product workflows."
-  - title: "Presented my 1st first-author full paper at FAccT 2022"
-    date: "Jun 2022" # Oct 21, 2021
-    description: "Also my first time visiting Seoul!"
-  - title: "Attended my first in-person conference at CHI 2022"
-    date: "May 2022" # Oct 21, 2021
-    description: "Finally get confirmed that people on zoom are real!"
+list:
+  - title: "Started my Master's Degree in Computer Science at Johns Hopkins University"
+    date: "Jan 2025"
+  - title: "Completed my summer internship as an NLP Intern at VoicePing"
+    date: "Aug 2023"
+    description: "I fine-tuned OpenAI Whisper to improve speech-to-text transcription accuracy for Japanese (6.97% word error rate) and Vietnamese (7.33% word error rate). I also developed a prototype web app using FastAPI, Next.js, and Firebase to enhance performance. &nbsp; <a href='https://docs.voice-ping.com/voiceping-corporation-company-profile/august-2023-fine-tuning-asr-models-for-japanese-and-vietnamese-by-using-openai-whisper-and-azure-speech-studio' style='font-weight: bold; color: #8a8a8a;'>Read more</a>"

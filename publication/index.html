@@ -54,8 +54,11 @@ title: Publication
                   {% if pub.video %}
                   <a href="{{ pub.video }}"><i class="fa fa-play"></i>&nbsp;&nbsp;Video</a>&nbsp;&nbsp;&nbsp;&nbsp;
                   {% endif %}
-                  {% if pub.slides %}
-                  <a href="{{ pub.slides }}"><i class="fa fa-file-powerpoint"></i>&nbsp;&nbsp;Slides</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                  {% if pub.api %}
+                  <a href="{{ pub.api }}"><i class="fa fa-code"></i>&nbsp;&nbsp;API</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                  {% endif %}
+                  {% if pub.website %}
+                  <a href="{{ pub.website }}"><i class="fa fa-globe"></i>&nbsp;&nbsp;Website</a>&nbsp;&nbsp;&nbsp;&nbsp;
                   {% endif %}
               </p>
               <hr>

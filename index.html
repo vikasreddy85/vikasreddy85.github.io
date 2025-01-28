@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Ruoxi (Anna) Shang
+title: Vikas Reddy
 ---
 
 {% assign projects = site.data.research-project.project %}
@@ -18,17 +18,18 @@ title: Ruoxi (Anna) Shang
     <div class="row">
         <div class="col-12 col-md-4 mb-4 mb-md-0 pr-md-0">
             <div class="sticky-top">
-            <img src="{{ '/assets/images/main/avatar.png' | relative_url }}" alt="Profile image of Ruoxi Shang wearing a purple benie" class="pt-3" style="height: auto; width: 60% !important; display: block; margin-left: auto; margin-right: auto;">
+            <img src="{{ '/assets/images/main/avatar-modified.png' | relative_url }}" alt="Profile image of Ruoxi Shang wearing a purple benie" class="pt-3" style="height: auto; width: 60% !important; display: block; margin-left: auto; margin-right: auto;">
 
             <p style="font-weight: 300 !important" class="pt-4">
-                I am an HCI researcher and a 4th-year PhD student at <a href="https://www.hcde.washington.edu/">Human Centered Design and Engineering (HCDE)</a> at the University of Washington, advised by Gary Hsieh and Chirag Shah. My research generally lie in Human-AI Interaction and Human-centered Interpretable ML. I study how generative AI can facilitate synthetic diversity in feedback to support tech professionals (e.g. programmers, researchers, data scientists). I am also interested in designing AI that can attend to the cognitive and emotional needs of humans when assisting them.                 
+                I am a first-year Master's student in the Department of Computer Science at <a href="https://www.jhu.edu/">Johns Hopkins University</a>. I am currently based in Baltimore, Maryland but also frequently visit my home in Tokyo, Japan. I speak four languages, including French and Japanese, and love traveling whenever I get the chance.  
                 <br><br>
-                Previously, I studied mathematics, data science, and ML at <a href="https://www.berkeley.edu/">UC Berkeley</a>.
+                My research interests focus on Machine Learning, Data Science, and Computational Social Sciences. I completed my undergraduate degree at the <a href="https://www.cs.umd.edu/">University of Maryland, College Park</a>, where I worked with Prof. Giovanni Luca Ciampaglia to study news reliability on Bluesky Social Media.  
             </p>
+            
             <p class="mb-0">
                 <a href="#" class="cryptedmail"
-                    data-name="rxshang"
-                    data-domain="uw"
+                    data-name="vkasire2"
+                    data-domain="jhu"
                     data-tld="edu"
                     onclick="window.location.href = 'mailto:' + this.dataset.name + '@' + this.dataset.domain + '.' + this.dataset.tld; return false;">
                     <i class="fa-solid fa-envelope" style="margin-right: .3rem;"></i>
@@ -36,13 +37,13 @@ title: Ruoxi (Anna) Shang
 
             </p>
             <p class="mb-0">
-                <a href="https://twitter.com/annashang_rx"><i class="fa-brands fa-twitter" style="margin-right: .4rem;"></i>@annashang_rx</a>
+                <a href="https://scholar.google.com/citations?user=w49k3AgAAAAJ&hl=en"><i class="fa-brands fa-google" style="margin-right: .4rem;"></i>Google Scholar</a>
             </p>
             <p class="mb-0">
-                <a href="https://scholar.google.com/citations?user=AFfJDWgAAAAJ&hl=en"><i class="fa-brands fa-google" style="margin-right: .4rem;"></i>Google Scholar</a>
+                <a href="https://www.linkedin.com/in/vikasreddy85/"><i class="fa-brands fa-linkedin" style="margin-right: .6rem;"></i>LinkedIn</a>
             </p>
             <p class="mb-0">
-                <a href="https://www.linkedin.com/in/ruoxi-shang-610359133"><i class="fa-brands fa-linkedin" style="margin-right: .6rem;"></i></a>
+                <a href="https://github.com/vikasreddy85"><i class="fa-brands fa-github" style="margin-right: .6rem;"></i>Github</a>
             </p>
             </div>
         </div>
@@ -71,9 +72,9 @@ title: Ruoxi (Anna) Shang
                 </div>
             </div>
             <div class="container pb-3 px-0 px-md-3">
-                <p style="font-weight: 500 !important; text-transform: uppercase;">Publications</p>
+                <p style="font-weight: 500 !important; text-transform: uppercase;">Publication</p>
                 <div class="row mt-4">
-                    {% for pub in publications limit: 5 %}
+                    {% for pub in publications limit: 1 %}
                     <div class="col-12">
                         <p class="mb-1" style="font-size: 1rem; font-weight: 400 !important;">{{ pub.title }}</p>
                         <p class="mb-1" style="font-size: .95rem; font-weight: 200 !important;">{% for author in pub.authors %}{% if author == "Ruoxi Shang" %}<b>{{ author }}</b>{% else %}{{ author }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}</p>
@@ -96,6 +97,13 @@ title: Ruoxi (Anna) Shang
                             {% endif %}
                             {% if pub.slides %}
                             <a href="{{ pub.slides }}"><i class="fa-solid fa-file-powerpoint"></i>&nbsp;&nbsp;Slides</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                            {% if pub.api %}
+                            <a href="{{ pub.api }}"><i class="fa-solid fa-code"></i>&nbsp;&nbsp;API</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                            {% endif %}
+                            {% if pub.website %}
+                            <a href="{{ pub.website }}"><i class="fa-solid fa-globe"></i>&nbsp;&nbsp;Website</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                            {% endif %}
+                            
                             {% endif %}
                         </p>
                         {% unless forloop.last %}
@@ -104,14 +112,14 @@ title: Ruoxi (Anna) Shang
                     </div>
                     {% endfor %}
                 </div>
-                <div class="d-flex flex-row-reverse mt-4">
+                <!-- <div class="d-flex flex-row-reverse mt-4">
                     <a href="{{ 'publication' | relative_url }}" style="font-size: .95rem; font-weight: 500 !important;">> View All</a>
-                </div>
+                </div> -->
             </div>
             <div class="container pb-3 px-0 px-md-3">
                 <p style="font-weight: 500 !important; text-transform: uppercase;">News</p>
                 <div class="row mt-4">
-                    {% for new in news limit: 5 %}
+                    {% for new in news limit: 3 %}
                     <div class="col-12">
                         <p class="mb-0" style="font-size: 1rem; font-weight: 400 !important;">{{ new.title }}</p>
                         <p class="mb-1" style="font-size: .85rem; font-weight: 200 !important;">{{ new.date }}</p>

@@ -1,10 +1,10 @@
 # Site settings
-title: Ruoxi (Anna) Shang
+title: Vikas Reddy
 author:
-  name: Ruoxi (Anna) Shang
-  email: rxshang@uw.edu
+  name: Vikas Reddy
+  email: vkasire2@jhu.edu
 description: > # this means to ignore newlines until "show_excerpts:"
-  Ruoxi (Anna) Shang's personal website
+  Vikas Reddy's personal website
 
 show_excerpts: false # set to true to show excerpts on the homepage
 

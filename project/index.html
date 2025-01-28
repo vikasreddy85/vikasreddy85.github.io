@@ -7,25 +7,24 @@ title: Project
 
 <div class="container py-4">
     <p style="font-weight: 500 !important; text-transform: uppercase;">Project</p>
-    {% for project in projects %}
-    <div class="row mt-5">
-        <div class="col-12 col-md-3 mb-3 mb-md-0 align-self-center">
-            <a href="{{ '/projects/' | append: project.slug | relative_url }}">
-                <img src="{{ '/assets/images/research_project/' | append: project.image | relative_url }}" 
-                     alt="{{ project.alt }}" 
-                     style="height: auto; width: 100%;">
+    <div class="row">
+        {% for project in projects %}
+        <div class="col-12 col-md-4 mb-4">
+            <a href="{{ project.link }}" class="card-link">
+                <div class="card">
+                    <img src="{{ '/assets/images/research_project/' | append: project.image | relative_url }}" 
+                         alt="{{ project.alt }}" 
+                         class="card-img-top" style="height: auto;">
+                    <div class="card-body">
+                        <p class="card-text text-muted" style="font-size: 0.8rem; font-style: italic;">{{ project.type }}</p>
+                        <h5 class="card-title" style="font-size: 1rem; font-weight: 500 !important;">{{ project.title }}</h5>
+                        <p class="card-text" style="font-size: 1rem;">{{ project.content }}</p>
+                        <p class="card-text" style="font-size: 1rem;">{{ project.description }}</p>
+                        <p class="card-text" style="font-size: 1rem;">Date: {{ project.date }}</p>
+                    </div>
+                </div>
             </a>
         </div>
-        <div class="col-12 col-md-9 mb-3 mb-md-0 align-self-center">
-            <p class="mt-2" style="font-size: 0.8rem; font-style: italic;">{{ project.type }}</p>
-            <a href="{{ '/projects/' | append: project.slug | relative_url }}">
-                <p class="mt-2" style="font-size: 1rem; font-weight: 500 !important;">{{ project.title }}</p>
-            </a>
-            <p class="mt-2" style="font-size: 1rem;">{{ project.content }}</p>
-            <p class="mt-2" style="font-size: 1rem;">{{ project.date }}</p>
-            <p class="mt-2" style="font-size: 1rem;">{{ project.collaborator }}</p>
-            <p class="mt-2" style="font-size: 1rem;">{{ project.advisor }}</p>
-        </div>
+        {% endfor %}
     </div>
-    {% endfor %}
 </div>

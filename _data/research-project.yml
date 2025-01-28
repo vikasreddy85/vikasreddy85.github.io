@@ -1,104 +1,18 @@
 project:
-  - title: "Designing AI-transformed Student Feedback for Instructor Engagement"
-    slug: "ai-transformed-feedback"
-    authors:
-      - "Ruoxi Shang"
-      - "Keri Mallari"
-      - "Wei Bin Au Yeong"
-      - "Ken Yasuhara"
-      - "Anthony Tang"
-      - "Gary Hsieh"
-    abstract: "Many instructors minimally engage with or avoid student evaluations of teaching (SETs) due to the significant time, cognitive, and emotional cost associated with effective usage. Nevertheless, SETs can contain feedback about students' learning experiences that instructors can use to improve instructional and educational delivery. In this work, we explore how to redesign SET reports to increase instructor engagement with this feedback. We explore the use of language models (LMs) to process and filter students' feedback to highlight recurring or important ideas, to identify actionable changes for instructors, and to de-emphasize demotivating aspects of this feedback. We explored a $4 \times 4$ strategy-presentation design space, generating six representative mock-ups that combine different strategies with various presentation formats. Through interviews with 16 post-secondary instructors, we learned how and when they engage with current SETs, and how they would perceive and use the LM-powered redesigned SET mock-ups. We found that instructors valued different kinds of presentation strategies depending on their needs, be it to actually improve their teaching, to get a one-time gestalt impression of their teaching performance, or to provide summative reports about their teaching performance. These findings shed light on new opportunities for designers to design dynamic SET reports, customized to instructors needs."  
-    status: "In Revision for CSCW 2025"
-    pdf: "../assets/pdf/publications/cscw2025_set_paper.pdf"
-    slides: "https://embed.figma.com/slides/RTOrgB97nUjlJBIJOvSTo7/Research-Projects?node-id=1-456&embed-host=share"
-    image: "debug.png"
-    alt: "Mockup of redesigned teaching evaluation interface showing different views"
+  - title: "MurkySky: Analyzing News Reliability on Bluesky"
+    image: "bsky.jpg"
+    description: "Explore how MurkySky tracks news reliability on Bluesky, focusing on reliable content and partisan-driven unreliable news."
+    link: https://csdl.umd.edu/murkysky/
+    date: "Aug 2023 - Jan 2025"
 
-  - title: "Synthetic Diversity in Academic Paper Reviews with LLMs"
-    slug: "synthetic-diverse-feedback"
-    authors:
-      - "Ruoxi Shang"
-      - "Ruican Zhong"
-      - "Rock Pang"
-      - "David McDonald"
-      - "Chirag Shah"
-      - "Gary Hsieh"
-    #short-content: "This project investigates how LLMs can support researchers in gaining diverse perspectives on their work, enhancing the quality of academic research."
-    abstract: "Obtaining diverse expert feedback on academic research is valuable yet challenging. Large Language Models (LLMs) show promise in simulating varied perspectives and generating paper reviews, but perceptions of synthetic diverse research feedback remain under-explored. This study investigates how researchers perceive LLM-generated reviews compared to human reviews. We generated synthetic diverse reviews for participants’ papers and conducted a mixed-methods study with 18 experienced researchers. Participants recognized synthetic diversity in the reviews’ expertise and attitudinal stances, along with benefits in uncovering blind spots, identifying critical issues, and enhancing willingness to improve. We found differences between perceptions of LLM-generated versus human reviews in degree of diversity, homogeneity, authenticity of expertise, and divergent opinions. Our findings offer insights into LLM’s role in academic discourse and inform guidelines on generating meaningful LLM-augmented diverse feedback. We also contribute a dataset of over 800 sentence-level annotations from 54 synthetic and 62 human reviews to facilitate future research."    
-    #content: "Diversity in viewpoint is not only welcomed but beneficial across online communities and other contexts, particularly in interdisciplinary research spaces such as HCI. This project explores the potential of Large Language Models (LLMs) in offering diverse perspectives to researchers, enabling them to view problems from different angles, anticipate potential controversies, uncover blind spots, and improve paper framing. The inherent limitations within academic and professional circles often restrict researchers to a narrow set of perspectives based on their background and community. Traditional review processes, while aiming to introduce broader viewpoints, can be time-consuming and unreliable. LLMs, known for their ideation capabilities, are utilized here to generate diverse viewpoints while adhering to good feedback practices and guidelines specific to research domains. This approach aims at providing a more reliable and efficient method for researchers to enhance their work with insights from a wider array of perspectives."
-    status: "In Revision for CHI 2025"
-    pdf: "../assets/pdf/publications/chi2025_synthetic_paper.pdf"
-    slides: "https://embed.figma.com/slides/1HeRULJRFLORtaOkwTndMF/Project-%7C-Synthetic-Diverse-Paper-Reviews?node-id=23-832&embed-host=share"
-    image: "diversity.png"
-    alt: "Black and white sketch of different types of speech bubbles generated by DALL-E 3"
+  - title: "Financial Chatbot"
+    image: "chat.svg"
+    description: "This chatbot uses GPT-4o mini and Gemini API to provide personalized financial advice on budgeting, investments, and financial planning. Built with Next.js and Tailwind CSS, it stores conversation data in Supabase for easy access and sharing with other users."
+    link: https://finance-chatbot.vercel.app/
+    date: "May 2024 - Aug 2024"
 
-  - title: "Feedback for LeetCode Practice with LLMs"
-    slug: "leetcode-feedback"
-    authors:
-      - "Ruoxi Shang"
-      - "David McDonald"
-      - "Colin Clement (Microsoft)"
-    abstract: "Prototyping and developing an interactive prototype for an IDE to capture exceptions with LLMs. Project sponsored by Microsoft Copilot Team."
-    status: "Side Project"
-    slides: "../assets/pdf/leetcode-feedback.pdf"
-    #pdf: "../assets/pdf/publications/cscw2025_set_paper.pdf"
-    #slides: "https://embed.figma.com/slides/RTOrgB97nUjlJBIJOvSTo7/Research-Projects?node-id=1-456&embed-host=share"
-    image: "trust.png"
-    #alt: "Mockup of redesigned teaching evaluation interface showing different views"
-  
-  #- title: "LLMs for Supporting Technical Interviews"
-  #  short-content: "We are exploring how LLMs-powered feedback can facilitate programmers to practice soft skills during a coding interview. "
-  #  content: "This research project leverages the capabilities of Large Language Models (LLMs) to explore provide qualitative feedback in the context of technical interviews. 
-  #  While traditional developer support tools usually focus on technical aspets of programming, we aim to develop a soft skill-focused assistive tool for programmers to effectively communicate their thinking process and articulate their intent. 
-  #  Collecting annotated data from seasoned interviewers, we employ few-shot learning techniques to train LLMs to provide specific, contextual, and actionable feedback that transcends generic advice. 
-  #  The ultimate goal is to create an AI-driven coaching system that mimics expert-level guidance, enhancing the candidate's holistic performance in the competitive tech job market. "
-  #  image: "debug.png"
-  #  alt: "Black and white sketch of a programmer learning to code generated by DALL-E 2"
-  #  date: "Ongoing"
-  #  type: "Research Project"
-  #  collaborator: ""
-  #  advisor: "Advised by David McDonald, Gary Hsieh, Colin Clement"
-
-  #- title: "Measuring Affective and Cognitive Trust in AI"
-  #  short-content: "We developed and validated a semantic differential scale measuring cognitive and affectivce trust towards AI."
-  #  content: "As a first step towards designing for AI systems that build appropriate trust through affective and cognitive routes, 
-  #  we seek to develop a valid and generalizable set of scales for this 2-dimensional construct of trust. 
-  #  Through a survey over 32 scenarios across 5 dimension and an exploratory factor analysis on the data collected, 
-  #  we established the scale with 27 items and demonstrated its validity. 
-  #  We then conducted another survey study, using the scale to explore a conversational agent's capability to 
-  #  build affective trust when the user is seeking for emotional support."
-  #  image: "trust.png"
-  #  alt: "Black and white sketch of a human shaking hand with a robot generated by DALL-E 2"
-  #  date: "Published at AIES 2024"
-  #  type: "Research Project"
-  #  advisor: "Advised by Gary Hsieh, Chirag Shah"
-
-  #- title: "Chatbot-assisted Collaboration"
-  #  content: "Designing a chatbot to help strangers get familiarized with each other and studying the 
-  #  effects on collaboration performance."
-  #  image: "chatbot.png"
-  #  alt: "Black and white sketch of a human holding a phone with a chatbot interface generated by DALL-E 2"
-  #  date: "Feb 2022 - Jan 2023"
-  #  type: "Research Project"
-  #  collaborator: "Collaborated with Donghoon Shin, Soomin Kim"
-  #  advisor: "Advised by Gary Hsieh, Joonhwan Lee"
-
-  #- title: "How data scientists diagnose ML models"
-  #  content: "With the support from designers and ML engineers in the company, 
-  #  I conducted internal research and interview study with data scientists to understand how people approach performance debugging of ML models in the field. 
-  #  Based on the interview findings, I challenged and validated the team’s internal assumptions, identified needs and difficulties people have with debugging ML models, 
-  #  and proposed ways to redesign and automate features of the product."
-  #  date: "Jul 2022 - Sep 2022"
-  #  type: "UXR Summer Internship Projectat TruEra"
-  #  advisor: "Advised by Mantas Lilis, Joshua Noble, Justin Lawyer"
-
-  #- title: "Value Sensitive Design for Recommender Systems"
-  #  content: "We adopted value sensitive design approach to explore the research question: 
-  #  How can designers of Recommender Systems adopt a Value-Sensitive approach? 
-  #  We conducted conceptual and technical investigation, analyzing the how everyday recommender systems uphold or violate stateholders’ values. 
-  #  We proposed design recommendations with respect to algorithmic awareness, profiling transparency, and user control."
-  #  date: "Winter 2022"
-  #  type: "UXR Summer Internship Projectat TruEra"
-  #  collaborator: "Collaborated with Mrudali Birla, Sourojit Ghosh, Lubna Razaq"
-  #  advisor: "Advised by Batya Friedman"
+  - title: "My-Fitterp-Pal"
+    image: "hack.jpg"
+    description: "This web app calculates daily calorie intake and suggests meal options from the University of Maryland dining halls. Created for Bitcamp Hackathon."
+    link: https://cmsc335-final-project-121k.onrender.com/
+    date: "April 2023"

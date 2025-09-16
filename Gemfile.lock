@@ -83,6 +83,7 @@ PLATFORMS
 DEPENDENCIES
   bundler
   minima!
+  webrick (~> 1.9)
 
 BUNDLED WITH
    2.1.4

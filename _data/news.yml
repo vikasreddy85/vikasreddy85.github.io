@@ -3,4 +3,4 @@ list:
     date: "Jan 2025"
   - title: "Completed my summer internship as an NLP Intern at VoicePing"
     date: "Aug 2023"
-    description: "I fine-tuned OpenAI Whisper to improve speech-to-text transcription accuracy for Japanese (6.97% word error rate) and Vietnamese (7.33% word error rate). I also developed a prototype web app using FastAPI, Next.js, and Firebase to enhance performance. &nbsp; <a href='https://docs.voice-ping.com/voiceping-corporation-company-profile/august-2023-fine-tuning-asr-models-for-japanese-and-vietnamese-by-using-openai-whisper-and-azure-speech-studio' style='font-weight: bold; color: #8a8a8a;'>Read more</a>"
+    description: "I fine-tuned OpenAI Whisper to improve speech-to-text transcription accuracy for Japanese (6.97% word error rate) and Vietnamese (7.33% word error rate). I also developed a prototype web app using FastAPI, Next.js, and Firebase to enhance performance."

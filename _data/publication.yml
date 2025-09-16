@@ -3,8 +3,8 @@ publication:
     authors: 
       - Vikas Reddy
       - Giovanni Luca Ciampaglia
-    venue_short: "ICWSM 2026"
-    venue_long: "International AAAI Conference on Web and Social Media"
+    # venue_short: "ICWSM 2025"
+    # venue_long: "International AAAI Conference on Web and Social Media"
     arxiv: "https://arxiv.org/abs/2501.10557"
     website: "https://csdl.umd.edu/murkysky/"
     api: "https://rapidapi.com/csdl-umd-csdl-umd-default/api/murkysky-api"
